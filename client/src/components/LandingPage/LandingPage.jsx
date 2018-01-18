@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
+import { Link } from 'react-router-dom';
 class LandingPage extends React.Component {
   constructor() {
     super();
@@ -15,7 +14,7 @@ class LandingPage extends React.Component {
           </button>
           <ul className="dropdown-menu">
             <li>
-              <a href="#">Hi-Lo</a>
+              <Link to="/hilo">Hi-Lo </Link>
             </li>
             <li className="disabled">
               <a href="#">K-O (Coming Soon)</a>
