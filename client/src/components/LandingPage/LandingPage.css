@@ -1,0 +1,20 @@
+.all-together {
+  padding-top: 25%;
+  text-align: center;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+.btn .caret {
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.dropdown.open {
+  margin: auto;
+}
