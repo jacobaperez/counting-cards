@@ -17,14 +17,13 @@ class HiLo extends React.Component {
   }
 
   testClick() {
-    TweenMax.from("#get-started", 2, {opacity: 0, rotation:180, immediateRender:false});
+    // let s = document.createElement('IMG');
+    // s.setAttribute('src', './shuffle.svg');
+    // TweenMax.from(s, 2, {opacity: 0, rotation:180, immediateRender:false});
   }
 
   handleShuffleClick() {
-    this.setState = {
-      shuffle: !this.state.shuffle
-    }
-    TweenMax.from('#hm', 2, { rotation: 360, immediateRender: false, opacity: 0});
+    // TweenMax.toFrom('#get-started', 2, { rotation: 360, opacity: 0});
   }
 
   handleHomeClick() {
@@ -35,10 +34,18 @@ class HiLo extends React.Component {
     return (
       <div>
         <h1>HI LO CARD COUNTING SYSTEM</h1>
+        <div id="rules">
+          <h3>Card counting Point Evaluation</h3>
+          <ul>
+            <li>Ace, King, Queen, Jack, 10: +1</li>
+            <li>7, 8, 9: +0</li>
+            <li>2, 3, 4, 5, 6: -1</li>
+          </ul>
+        </div>
         <div className="card">
           <h2>Card Element goes here.</h2>
           {
-              this.state.shuffle ? <img id='hm' src={shuffle} /> :
+
               <img id="get-started" src={playButton} />
 
           }
