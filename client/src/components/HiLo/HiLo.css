@@ -28,3 +28,7 @@ padding-top: 10%;
   height: 120px;
   width: 120px;
 }
+
+.card-counts {
+  text-align: center;
+}
