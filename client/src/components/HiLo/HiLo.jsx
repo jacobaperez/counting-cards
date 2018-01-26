@@ -28,6 +28,10 @@ class HiLo extends React.Component {
   }
 
   handleDraw() {
+    // axios({
+    //   method: 'get',
+    //   url: 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1'
+    // })
     console.log('Draw a card!');
   }
 
